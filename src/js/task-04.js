@@ -26,9 +26,7 @@ targetBtnMinus.addEventListener("click", () => {
 
 
 
-// buttonPlus.addEventListener("click", () => {
-//   console.log("Button was clicked");
-// });
+
 
 
 
