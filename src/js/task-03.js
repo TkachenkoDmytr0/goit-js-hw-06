@@ -12,22 +12,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
 console.log(images)
 const galleryItem = document.querySelector('.gallery');
 console.log(galleryItem)
 
+for (let i = 0; i < images.length; i += 1) {
+  galleryItem.insertAdjacentHTML("beforebegin", `<li class="item-taskfree"><img class="images-taskfree" src= "${images[i].url}" alt= "${images[i].alt}"></img></li>`)
 
-for (const elementImg of images) {
-  const itemLi = document.createElement('li');
-  const itemNewTagImg = document.createElement('img');
-  itemNewTagImg.append(elementImg.url)
-  console.log(elementImg.url);
-  galleryItem.append(itemLi)
-  itemNewTagImg.append(elementImg);
-  itemLi.append(itemNewTagImg);
-
-  
 }
+
 // Используй массив объектов images для создания элементов <img>
 //  вложенных в < li >.Для создания разметки используй шаблонные строки
 //  и метод insertAdjacentHTML().

@@ -22,3 +22,15 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.images-taskfree {
+  width: 520px;
+  height: 320px;
+}
+
+.item-taskfree {
+  margin: 20px;
+  display: flex;
+
+
+}
