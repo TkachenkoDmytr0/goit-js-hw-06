@@ -6,16 +6,17 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-console.log(ingredients);
-const elementUl = document.querySelector('#ingredients');
 
+const elementUl = document.querySelector('#ingredients');
+const liArray = []
 
 for (const el of ingredients) {
   const newTag = document.createElement('li'); 
-  elementUl.append(newTag)
-  newTag.textContent = el;
   newTag.classList.add('item')
+  newTag.textContent = el;
+  liArray.push(newTag)
 }
+elementUl.append(...liArray)
 console.log(elementUl)
 // Напиши скрипт, который для каждого элемента массива ingredients:
 

@@ -13,9 +13,16 @@ const images = [
   },
 ];
 
-console.log(images)
+
 const galleryItem = document.querySelector('.gallery');
-console.log(galleryItem)
+
+// const markup = images
+// 	.map(image => `<li><img class="picture" src=${image.url} width = '400' alt='${image.alt}'></img></li>`)
+// 	.join('')
+
+// galleryItem.insertAdjacentHTML('beforeend', markup)
+  
+
 
 for (let i = 0; i < images.length; i += 1) {
   galleryItem.insertAdjacentHTML("beforebegin", `<li class="item-taskfree"><img class="images-taskfree" src= "${images[i].url}" alt= "${images[i].alt}"></img></li>`)

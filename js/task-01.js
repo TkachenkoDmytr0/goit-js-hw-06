@@ -17,8 +17,8 @@ const ulElement = document.querySelector('#categories');
 console.log("Number of categories:", ulElement.children.length);
 
 for (const itemLi of ulElement.children) {
-  console.log('\nCategory:', itemLi.children[0].textContent)
-  console.log('Elements:', itemLi.children[1].children.length)
+  console.log('\nCategory:', itemLi.firstElementChild.textContent)
+  console.log('Elements:', itemLi.lastElementChild.children.length)
 }
 
 

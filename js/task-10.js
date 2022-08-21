@@ -19,8 +19,9 @@ const createBoxes = amount => {
 	return elementsToAdd
 }
 
-const destroyBoxes = () => {
+function destroyBoxes () {
 	boxes.innerHTML = ''
+	
 }
 
 btnCreate.addEventListener('click', () => {
