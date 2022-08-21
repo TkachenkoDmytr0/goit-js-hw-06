@@ -16,18 +16,18 @@ const images = [
 
 const galleryItem = document.querySelector('.gallery');
 
-// const markup = images
-// 	.map(image => `<li><img class="picture" src=${image.url} width = '400' alt='${image.alt}'></img></li>`)
-// 	.join('')
+const markup = images
+	.map(image => `<li><img class="picture" src=${image.url} width = '400' alt='${image.alt}'></img></li>`)
+	.join('')
 
-// galleryItem.insertAdjacentHTML('beforeend', markup)
+galleryItem.insertAdjacentHTML('beforeend', markup)
   
 
 
-for (let i = 0; i < images.length; i += 1) {
-  galleryItem.insertAdjacentHTML("beforebegin", `<li class="item-taskfree"><img class="images-taskfree" src= "${images[i].url}" alt= "${images[i].alt}"></img></li>`)
+// for (let i = 0; i < images.length; i += 1) {
+//   galleryItem.insertAdjacentHTML("beforebegin", `<li class="item-taskfree"><img class="images-taskfree" src= "${images[i].url}" alt= "${images[i].alt}"></img></li>`)
 
-}
+// }
 
 // Используй массив объектов images для создания элементов <img>
 //  вложенных в < li >.Для создания разметки используй шаблонные строки
