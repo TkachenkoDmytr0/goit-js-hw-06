@@ -7,13 +7,16 @@ const ingredients = [
   'Condiments',
 ];
 const list = document.querySelector('#ingredients');
+const liArray = []
 
-for (let i = 0; i < ingredients.length; i += 1) {
-  const li = document.createElement('li');
-  li.textContent = ingredients[i];
-  li.setAttribute('class', 'item');
-  list.append(li);
-}
+ingredients.forEach(ingredient => {
+	const item = document.createElement('li')
+	item.className = 'item'
+	item.textContent = ingredient
+	liArray.push(item)
+})
+
+list.append(...liArray)
 // Напиши скрипт, который для каждого элемента массива ingredients:
 
 // Создаст отдельный элемент <li>. Обзательно используй метод document.createElement().
